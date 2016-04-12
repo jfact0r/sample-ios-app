@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="MSLItem" representedClassName="MSLItem" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="itemCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MSLItemCategory" inverseName="items" inverseEntity="MSLItemCategory" syncable="YES"/>
+        <relationship name="lists" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MSLList" inverseName="items" inverseEntity="MSLList" syncable="YES"/>
+    </entity>
+    <entity name="MSLItemCategory" representedClassName="MSLItemCategory" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MSLItem" inverseName="itemCategory" inverseEntity="MSLItem" syncable="YES"/>
+    </entity>
+    <entity name="MSLList" representedClassName="MSLList" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MSLItem" inverseName="lists" inverseEntity="MSLItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MSLItem" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="MSLItemCategory" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="MSLList" positionX="-36" positionY="9" width="128" height="75"/>
+    </elements>
+</model>

@@ -1,0 +1,26 @@
+//
+//  My-Shopping-List-Prefix.pch
+//  My Shopping List
+//
+//  Created by Joel Arnott on 7/04/2016.
+//  Copyright © 2016 Joel Arnott. All rights reserved.
+//
+
+#ifndef My_Shopping_List_Prefix_pch
+#define My_Shopping_List_Prefix_pch
+
+// Libraries
+#import <CoreData/CoreData.h>
+
+// Core Data
+#import "DataController.h"
+#import "MSLList.h"
+#import "MSLItemCategory.h"
+#import "MSLItem.h"
+
+// App
+#import "Macros.h"
+#import "Constants.h"
+
+#endif
+
